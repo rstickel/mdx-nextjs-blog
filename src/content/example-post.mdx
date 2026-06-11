@@ -1,0 +1,90 @@
+---
+title: My First MDX Blog Post
+date: 2023-10-27
+description: This is an example blog post written in MDX for the Next.js blog platform. It showcases various MDX features.
+author: Your Name
+tags: [Next.js, MDX, Blog, Example, Features]
+---
+
+Welcome to your new MDX-powered blog! This post demonstrates some of the cool things you can do with MDX.
+
+## What is MDX?
+
+MDX allows you to write JSX in your Markdown content. It's the best of both worlds: you get the simplicity of Markdown with the power of React components.
+
+```jsx
+// Example of a React component inside MDX
+function HelloButton() {
+  return <button onClick={() => alert('Hello from MDX!')}>Click me!</button>;
+}
+
+<HelloButton />
+```
+
+### Code Highlighting
+
+Thanks to `rehype-pretty-code`, your code blocks will be beautifully highlighted. Try changing the theme in `tailwind.config.ts`.
+
+```typescript
+import React from 'react';
+import { useState } from 'react';
+
+interface CounterProps {
+  initialCount?: number;
+}
+
+const Counter: React.FC<CounterProps> = ({ initialCount = 0 }) => {
+  const [count, setCount] = useState(initialCount);
+
+  return (
+    <div>
+      <p>Current count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <button onClick={() => setCount(count - 1)}>Decrement</button>
+    </div>
+  );
+};
+
+export default Counter;
+```
+
+### Lists
+
+Here's an unordered list:
+
+*   Item one
+*   Item two
+    *   Sub-item A
+    *   Sub-item B
+*   Item three
+
+And an ordered list:
+
+1.  First step
+2.  Second step
+3.  Third step
+
+### Blockquotes
+
+> "The only way to do great work is to love what you do." 
+> - Steve Jobs
+
+### Links
+
+Visit [Next.js](https://nextjs.org) or check out the [MDX documentation](https://mdxjs.com/).
+
+### Images
+
+You can include images using standard Markdown syntax. The `MDXComponents` in `src/components/MDXComponents.tsx` already handles Next.js `Image` optimization.
+
+![Placeholder Image](https://via.placeholder.com/800x400/2563eb/ffffff?text=MDX+Blog+Image)
+
+### Table Example
+
+| Header 1 | Header 2 | Header 3 |
+| :------- | :------- | :------- |
+| Row 1 Col 1 | Row 1 Col 2 | Row 1 Col 3 |
+| Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 |
+| Row 3 Col 1 | Row 3 Col 2 | Row 3 Col 3 |
+
+This platform is designed to be fast, customizable, and SEO-friendly. Enjoy creating content!
