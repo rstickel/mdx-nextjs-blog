@@ -2,35 +2,14 @@
   "name": "mdx-nextjs-blog",
   "version": "0.1.0",
   "private": true,
+  "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "clsx": "latest",
-    "gray-matter": "latest",
-    "next": "latest",
-    "next-mdx-remote": "latest",
-    "next-themes": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "rehype-autolink-headings": "latest",
-    "rehype-pretty-code": "latest",
-    "rehype-slug": "latest",
-    "remark-gfm": "latest"
-  },
-  "devDependencies": {
-    "@tailwindcss/typography": "latest",
-    "@types/node": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "autoprefixer": "latest",
-    "eslint": "latest",
-    "eslint-config-next": "latest",
-    "postcss": "latest",
-    "tailwindcss": "latest",
-    "typescript": "latest"
+    "start": "next start"
   }
 }
